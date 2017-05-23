@@ -13,3 +13,17 @@ Google Drive的雲端儲存,這幾年的用戶也越來越多,Google本來就是
 * Deep Link可以選擇Disable。 
 H.完成後的頁面,您將可以找到Client ID與Client Secret (以不再需要) ,請記錄 起來,之後將需要加入程式碼中。 
 4. 至此,一個App支援Google Drive所需的基本資訊已經申請完畢了。
+### Pods
+project 'HelloMyGDrive.xcodeproj'  
+\# Uncomment the next line to define a global platform for your project  
+\# platform :ios, '9.0'  
+
+target 'HelloMyGDrive' do  
+  \# Uncomment the next line if you're using Swift or would like to use dynamic frameworks  
+  \# use_frameworks!  
+
+  \# Pods for HelloMyGDrive  
+pod "GoogleAPIClient/Drive"  
+pod "GTMOAuth2"  
+pod "Google/SignIn"  
+end
